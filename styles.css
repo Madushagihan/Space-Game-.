@@ -1,0 +1,150 @@
+
+
+
+.resetBtn {
+    background-color: #f44336;
+}
+
+.resetBtn:hover {
+    background-color: #d32f2f;
+} */
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to bottom, #0a0a2a, #1a1a3a);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .game-container {
+            width: 600px;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        
+        .score-board {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: rgba(0, 0, 50, 0.7);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        #gameCanvas {
+            background-color: #000;
+            border-radius: 5px;
+            border: 2px solid #00ffff;
+        }
+        
+        .controls {
+            margin-top: 15px;
+        }
+        
+        .controls p {
+            margin-bottom: 15px;
+            color: #0ff;
+            font-size: 1.1rem;
+        }
+        
+        button {
+            background: linear-gradient(to bottom, #00aaff, #0055ff);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: linear-gradient(to bottom, #00ccff, #0077ff);
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        #startBtn {
+            background: linear-gradient(to bottom, #00cc00, #009900);
+        }
+        
+        #startBtn:hover {
+            background: linear-gradient(to bottom, #00ee00, #00bb00);
+        }
+        
+        #resetBtn {
+            background: linear-gradient(to bottom, #ff3300, #cc0000);
+        }
+        
+        #resetBtn:hover {
+            background: linear-gradient(to bottom, #ff5522, #ee0000);
+        }
+        
+        .game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 50, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+            z-index: 10;
+            box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+        }
+        
+        .game-over h2 {
+            color: #ff0000;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+        }
+        
+        .game-over p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle linear infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 1; }
+        }
