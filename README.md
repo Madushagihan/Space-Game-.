@@ -25,3 +25,10 @@ This project is focused on practicing front-end development and game logic with 
 1. Download or clone this repository:
    ```bash
    git clone https://github.com/Madushagihan/Space-Game-.git
+
+## Project Stucture 📁
+   Space-Game-/
+│── index.html
+│── style.css
+│── game.js
+│── README.md
